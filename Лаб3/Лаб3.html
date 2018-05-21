@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Мэндбаяр.Б Лаб4 </title>
+    <script type = "text/javascript">
+      function copy(){
+        var tag = document.getElementById("results");
+	    given = " ";
+	    scan(document.getElementsByTagName("body")[0], 0);
+	    tag.innerHTML = given;
+      }
+      var given = " ";
+      function scan(node, n){
+	if ((node != null) && (node.nodeName != "#text")){
+  	  for (var i = 0; i < n; i++){
+            given = given + "&nbsp";
+          }
+	  given = given + node.nodeName + "<br/>";
+	  for (var j = 0; j < node.childNodes.length; j++){
+	    scan(node.childNodes[j], n + 1);
+          }
+	}
+        else return;
+	} 
+    </script>
+  </head>
+<body>
+  <style type = "text/css">
+    .chngr{
+      display: table;
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <div><p style="color: orange">LOOOOOOOOP</p></div>
+  <div><p style="font: arial">LOoooooOP</p></div>
+  <div><p style="font-size: 15px">LooooooooooP</p></div>
+  <button id = "button" onclick = 'copy()'> Print all tags from HTML </button>
+  <div id = "results"></div>
+</body>
+</html>

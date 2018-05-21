@@ -1,0 +1,10 @@
+<h1>Edit Game</h1>
+
+<%= simple_form_for @game, :html => { :multipart => true} do |g| %>
+  <%= g.select :category_id, @categories %>
+  <%= g.input :title, label: "Book Title" %>
+  <%= g.input :rate, label: "Rate" %>
+  <%= g.input :publisher, label: "Published by" %>
+  <%= g.input :description, label: "Description" %>
+  <%= g.button :submit %>
+<% end %>

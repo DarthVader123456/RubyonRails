@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th><h2 style="text:center-align" colspan="2">Application</h2></th>
+        </tr> 
+      </thead>
+      <tbody>
+    	<form action="/form_submit" method="get">
+	  <tr>
+	    <td>First name:</td>
+      	    <td><input type="text" name="fname"/></td>
+	  </tr>
+	  <tr>
+	    <td>Last name:</td> 
+      	    <td><input type="text" name="lname"/></td>
+	  </tr>
+    	  <tr>
+      	    <td>Birth data:</td> 
+      	    <td><input type="date" name="bday"></td>
+   	  </tr>
+ 	  <tr>
+  	    <td>E-mail:</td>
+      	    <td><input type="email" name="Umail"></td>
+    	  </tr>
+	  <tr>
+	    <td>Sex:</td> 
+      	    <td><input type="radio" name="gender" value="Female" id="fm"/><label for="fm">female</label>
+		<input type="radio" name="gender" value="male"/>m</td>
+	  </tr>
+    	  <tr>
+    	    <td>Education</td><td><select>
+        	<option>........</option>
+        	<option>Bachelor</option>
+            	<option>Master</option>
+            	<option>Doctoral</option>
+            	<option>Professional</option>
+        	</select></td>
+    	  </tr>
+          <tr>
+            <td>Enter your CV<br/></td>        	
+          </tr>
+          <tr>
+            <td>Select a file:</td> 
+            <td><input type="file" name="img"></td>
+          </tr>
+	  <tr>
+	    <td colspan="2">
+            <input type="image" src="http://www.glutenfreesingles.com/blog/wp-content/uploads/2015/04/Invia_pulsante_facebook.jpg" alt="Submit" width="70" height="55">
+	  </td>
+	  </tr>
+	</form>
+    </tbody>
+  </table>
+  </body>
+</html>

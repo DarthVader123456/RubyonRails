@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <style type="text/css">
+      .divTable {
+        display:  table;
+        width: auto;
+       	background-color: #eee;
+       	border: 1px solid  #666666;
+       	border-spacing: 5px;
+        text-align: center;
+      }
+      .divRow {
+        display: table-row;
+   	width: auto;
+      }
+      .divCell {
+        float: left;
+        display: table-column;
+        width: 150px;
+        background-color: #ccc;
+      }
+      .divCel {
+        float: left;
+       	display: table-column;
+       	width: 50px;
+       	background-color: cyan;
+      }
+      .divColor {
+        float: left;
+        display: table-column;
+        width: 150px;
+        background-color: blue;
+      } 
+     </style>
+     <form id="form1">
+       <div class="divTable">
+      	 <div class="headRow"><p><b>Schedule</b></p></div>
+         <div class="headRow">
+           <div class="divCel">Time</div>
+           <div class="divColor" align="center">Monday</div>
+           <div class="divColor">Tuesday</div>
+           <div class="divColor">Wednesday</div>
+           <div class="divColor">Thursday</div>
+           <div class="divColor">Friday</div>
+         </div>
+         <div class="divRow">
+    	   <div class="divCel">08:00</div> 
+           <div class="divCell">Монгол хэл</div>
+           <div class="divCell">Математик</div>
+           <div class="divCell">Газар зүй</div>
+           <div class="divCell">Математик</div>
+           <div class="divCell">Нийгэм</div>
+         </div>
+         <div class="divRow">
+           <div class="divCel">08:45</div> 
+           <div class="divCell">Монгол хэл</div>
+           <div class="divCell">Биеийн тамир</div>
+           <div class="divCell">АЧСЦ</div>
+           <div class="divCell">Хими</div>
+           <div class="divCell">Физик</div>
+         </div>
+         <div class="divRow">
+           <div class="divCel">9:30</div> 
+           <div class="divCell">Сонгох</div>
+           <div class="divCell">Англи хэл</div>
+           <div class="divCell">Сонгох</div>
+           <div class="divCell">Хими</div>
+           <div class="divCell">Газар зүй</div>
+         </div>
+      </div>
+  </form>
+</body>
+</html>

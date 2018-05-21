@@ -1,0 +1,22 @@
+<div>
+  <h2><%= @game.title %></h2>
+  <h2><%= @game.rate %></h2>
+  <h3><%= @game.publisher %></h3>
+  <h4><%= @game.category.name %></h4>
+  <p><%= @game.description %></p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div>
+    </div>
+  </div>
+</div>
+<%= link_to "Back", root_path %>
+<% if user_signed_in? %>
+  <% if @game.user_id == current_user.id %>
+    <%= link_to "Edit", edit_game_path(@game) %>
+    <%= button_to "Delete", game_path(@game), method: :delete, data: { confirm: "Are you sure?" } %>
+
+  <% end %>
+<% end %>
